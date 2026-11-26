@@ -1,0 +1,22 @@
+###Создание задачи
+POST https://localhost:7044/todos
+Content-Type: application/json
+
+{
+  "title": "Умимс",
+  "isCompleted": false
+}
+
+###Получить все задачи
+GET https://localhost:7044/todos
+
+###Обновить задачи
+PUT https://localhost:7044/todos/6
+Content-Type: application/json
+{
+  "title": "учить ASP.NET Core до конца",
+  "IsCompleted": true
+}
+
+###Удалить задачи
+DELETE https://localhost:7044/todos/8
